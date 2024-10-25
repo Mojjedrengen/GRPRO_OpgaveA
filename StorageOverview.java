@@ -1,31 +1,21 @@
 import java.util.ArrayList;
 
 public class StorageOverview {
-    private ArrayList<ScalablePriceStorage> scalablePriceStorages;
-    private ArrayList<FixedPriceStorage> fixedPriceStorages;
+    private ArrayList<Storage> storage;
 
     public StorageOverview() {
-        scalablePriceStorages = new ArrayList<>();
-        fixedPriceStorages = new ArrayList<>();
+        storage = new ArrayList<>();
     }
 
     /* Show storage info */
     public void display() {
-        for (ScalablePriceStorage s : scalablePriceStorages) {
-            s.display();
-            System.out.println();
-        }
-        for (FixedPriceStorage s : fixedPriceStorages) {
+        for (Storage s : storage) {
             s.display();
             System.out.println();
         }
     }
 
-    public void addScalablePriceStorage(ScalablePriceStorage s) {
-        scalablePriceStorages.add(s);
-    }
-
-    public void addFixedPriceStorage(FixedPriceStorage s) {
-        fixedPriceStorages.add(s);
+    public void addStorage(Storage s) {
+        storage.add(s);
     }
 }
