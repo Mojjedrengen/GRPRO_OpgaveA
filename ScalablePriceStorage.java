@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
-public class ScalablePriceStorage extends Storage{
+public class ScalablePriceStorage extends PhysicalStorage 
+{
     private double pricePerSquareMeter;
     private int squareMeters;
 

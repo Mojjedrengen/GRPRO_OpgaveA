@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
-public class FixedPriceStorage extends Storage{
+public class FixedPriceStorage extends PhysicalStorage 
+{
     int keyCounter;
     
     public FixedPriceStorage(String storageId, double price) {

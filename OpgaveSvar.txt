@@ -1,2 +1,5 @@
 Opg 2.3:
-feltet s 
+feltet s har den statiske type Storage og når programmet køres på en onsdag har den den dynamiske type ScalablePriceStorage.
+
+Opg 2.4:
+Da ScalablePriceStorage har en Overrided display()-metode så vil den kører ScalablePriceStorage's display()-metode.
